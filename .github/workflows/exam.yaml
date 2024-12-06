@@ -27,19 +27,19 @@ jobs:
           cache: maven
 
       - name: Test with Maven
-        run : mvn -B clean test --file java/pom.xml
+        run : mvn -B clean test --file /java/pom.xml
 
       - name: Build with Maven
-        run: mvn -B package --file java/pom.xml
+        run: mvn -B package --file /java/pom.xml
 
       - name: Node 10
         uses: actions/setup-node@v4
         with:
           node-version: 10
       - run: npm ci
-      - run: npm run angular/lint
-      - run: npm run angular/test
-      - run: npm run angular/build
+      - run: npm run /angular/lint
+      - run: npm run /angular/test
+      - run: npm run /angular/build
 
       - name: Set up docker buildx
         uses: docker/setup-buildx-action@v3
