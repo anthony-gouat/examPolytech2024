@@ -37,7 +37,7 @@ L'url et le token de connexion vous sera donner pendant l'exam.
 
 15) Rédiger un workflow github action pour faire l'intégration continue de ces deux projets.
 
---- 
+---
 
 Dans un fichier txt simple à coté de votre docker-compose.yml répondez aux questions suivantes:  
 

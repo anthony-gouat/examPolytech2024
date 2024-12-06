@@ -1,0 +1,32 @@
+16) Qu'est ce que Docker ? A quoi cela sert-il ?
+
+Docker est un logiciel qui permet de faire de la conteneurisation d'applications. C'est à dire que l'on va créer un environnement qui n'est composé que du minimum requis pour faire tourner notre application.
+Les conteneurs contrairement aux VMs n'ont pas besoins de charger d'avoir un noyeau différent à chaque fois.
+
+Les conteneurs sont pratique car ils sont exécutés indépendamment de l'environnement de lequel ils se trouvent et peuvent donc se comporterons de la même manière sur une machine linux, Windows ou mac (le rêve)
+
+17) Qu'est ce que la CI et la CD ? Pourquoi est-ce utile ?
+
+La CI, intégration continue est un moyen de garantir la qualité du code et donc du livrable. Pour ça on utilise des pipeline qui vont être exécutés grâce à des trigger sur des vcs (principalement git) on peut utiliser Jenkins mais GitHub et gitlab proposent également leurs propre environnements.
+
+On peut voir le pipe du CI comme ceci :
+
+Push => linting => UT => Build => Ephemeral deployement => IT => CD
+
+Ensuite on passe au CD ou déploiement continu/ livraison continue
+
+Pour faire simple, c'est le process qu'on va mettre en place pour faire parvenir un livrable et le faire passer par plusieurs environnements (l'objectif n'est pas toujours la mise en prod).
+
+CI => Dev => Auto gate => QA => Auto gate => Manual gate => Prod
+
+Entre chaque env on passe par des portes (auto ou non(surtout la mise en prod))
+On peut avoir plusieurs fois le même env en parallèle, par exemple pour différentes équipes de dev on mettra en place plusieurs env de dev.
+
+18) Qu'avez vous pensez du cours ? 
+
+Cours super intéressant, je suis principalement intéressé par le dev et je commence à comprendre comment fonctionne pas mal de choses. Et je savais que la prochaine grosse étapes était d'apprendre à utiliser docker, je m'y suis déjà essayé en 2ème année de DUT info, ça pique. j'ai compris qu'il me manquait encore pas mal de brique pour pouvoir me lancer la dedans, donc pour moi ce cours tombe à pique. Personnellement je suis vraiment satisfait d'avoir pu dégrossir docker et maintenant quand je regarde un dockerfile c'est déjà moins chinois pour moi.
+
+La partie sur les CI/CD est peut être un peu courte mais je suppose que vous ne pouvez pas, dans le temps imparti tout nous montrer.
+
+19) Surprenez moi
+En parallèle du cours j'ai suivi ce tuto sur internet https://www.youtube.com/watch?v=dQw4w9WgXcQ j'ai trouvé que le mec expliquais bien le fonctionnement global de docker et comment on peut intégrer ça.
